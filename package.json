@@ -1,0 +1,66 @@
+{
+  "name": "tiptap-code-block-gpu-lexer",
+  "version": "0.1.0",
+  "description": "Code block extensions using gpu-lexer for Tiptap",
+  "homepage": "https://github.com/nuskey8/tiptap-code-block-gpu-lexer#readme",
+  "bugs": {
+    "url": "https://github.com/nuskey8/tiptap-code-block-gpu-lexer/issues"
+  },
+  "license": "MIT",
+  "author": "nuskey8",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuskey8/tiptap-code-block-gpu-lexer.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "example": "vp dev --config examples/vite.config.ts",
+    "example:build": "vp build --config examples/vite.config.ts"
+  },
+  "dependencies": {
+    "gpu-lexer": "^0.0.3"
+  },
+  "devDependencies": {
+    "@tiptap/core": "^3.31.4",
+    "@tiptap/extension-code-block": "^3.31.4",
+    "@tiptap/pm": "^3.31.4",
+    "@tiptap/starter-kit": "^3.31.4",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.1.1",
+    "bumpp": "^11.1.0",
+    "jsdom": "^30.1.1",
+    "typescript": "^7.0.2",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0",
+    "vite-plus": "^0.2.4"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^3.0.0",
+    "@tiptap/extension-code-block": "^3.0.0",
+    "@tiptap/pm": "^3.0.0"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "bun",
+      "version": "1.4.2",
+      "onFail": "download"
+    }
+  }
+}

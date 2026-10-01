@@ -1,0 +1,153 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+  font-synthesis: none;
+}
+body {
+  margin: 0;
+  padding: 24px;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.toolbar {
+  margin-bottom: 16px;
+}
+button {
+  font: inherit;
+  font-weight: 500;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 9px;
+  background: #f0eeed;
+  color: #302d2b;
+  cursor: pointer;
+}
+button[aria-pressed="true"] {
+  background: #dedbd9;
+}
+button:focus-visible {
+  outline: 2px solid #68cef5;
+  outline-offset: 3px;
+}
+.tiptap {
+  outline: none;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 24px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.tiptap:focus-within {
+  border-color: #8c959f;
+}
+.tiptap p {
+  margin: 28px 0;
+}
+.tiptap > :first-child {
+  margin-top: 0;
+}
+.tiptap > :last-child {
+  margin-bottom: 0;
+}
+.tiptap pre {
+  position: relative;
+  margin: 28px 0;
+  border-radius: 9px;
+  background: #2e2b29;
+  color: #fafafa;
+}
+pre {
+  margin: 0;
+  padding: 14px 18px;
+  overflow-x: auto;
+}
+pre code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+#status {
+  margin: 20px 0 0;
+  color: #777;
+  font-size: 12px;
+}
+.hljs-comment {
+  color: #aaa;
+}
+.hljs-string {
+  color: #b7ed79;
+}
+.hljs-number,
+.hljs-variable.constant_ {
+  color: #ffb477;
+}
+.hljs-keyword,
+.hljs-type {
+  color: #68cef5;
+}
+.hljs-operator {
+  color: #fafafa;
+}
+.hljs-title.function_ {
+  color: #f3ed81;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 20px 16px;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+.description {
+  max-width: 800px;
+  margin: 16px 0 20px;
+  color: #57606a;
+  line-height: 1.7;
+}
+.description a {
+  color: #0969da;
+}
+.description code {
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+.github-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 560px;
+  padding: 18px;
+  margin-bottom: 32px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  color: #24292f;
+  text-decoration: none;
+}
+.github-card:hover {
+  background: #f6f8fa;
+}
+.github-card:focus-visible {
+  outline: 2px solid #0969da;
+  outline-offset: 3px;
+}
+.github-icon,
+.github-arrow {
+  flex-shrink: 0;
+}
+.github-caption {
+  display: block;
+  margin-top: 6px;
+  color: #57606a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.github-arrow {
+  margin-left: auto;
+  color: #57606a;
+}
