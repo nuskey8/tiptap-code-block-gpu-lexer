@@ -1,5 +1,9 @@
 # tiptap-code-block-gpu-lexer
 
+[![npm version](https://img.shields.io/npm/v/tiptap-code-block-gpu-lexer)](https://www.npmjs.com/package/tiptap-code-block-gpu-lexer)
+
+[Example](https://nuskey8.github.io/tiptap-code-block-gpu-lexer/)
+
 Tiptap 3 CodeBlock extension with syntax highlighting powered by [gpu-lexer](https://github.com/vercel-labs/gpu-lexer). Standard CodeBlock commands, keyboard shortcuts, fenced-code input rules, language attributes, and paste handling are inherited from `@tiptap/extension-code-block`.
 
 ## Requirements
@@ -32,7 +36,7 @@ const editor = new Editor({
 });
 ```
 
-Use this extension once in place of CodeBlock or CodeBlockLowlight. 
+Use this extension once in place of CodeBlock or CodeBlockLowlight.
 
 ## Styling
 
