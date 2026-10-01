@@ -66,3 +66,7 @@ Add token styles to your application's stylesheet:
   color: #6f42c1;
 }
 ```
+
+## License
+
+This library is released under the [MIT License](LICENSE).
